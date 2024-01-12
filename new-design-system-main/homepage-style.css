@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+* {
+	margin: 0; 
+	padding: 0; 
+        }
+
+#logo {
+	width: 65px; 
+	height: auto; 
+	position: absolute;
+	top: 9px; 
+	left: 15px;
+}
+
+.school-name {
+	color: white;
+	font-weight: bold;
+	font-size: 2.0rem;
+	margin-left: 85px;
+	margin-top:  13px;
+	letter-spacing: 3.5px;
+	font-family: 'Windsor Pro', sans-serif;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.school-def {
+	color: white;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+	margin-left: 85px;
+	font-size: 1.5;
+	letter-spacing: 2px;
+	font-family: 'Poppins', sans-serif;
+	margin-top: -4px;
+}
+
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.background-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(8px);
+}
+
+.title {
+    color: white; 
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 60px;
+	margin-left: 45px;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+	font-family: 'Poppins', sans-serif;
+}
+
+.button-container {
+	display: flex;
+	justify-content: center;
+	margin-top: 30px;
+}
+
+.button {
+	background-color: white;
+	color: black;
+	font-size: 20px;
+	padding: 10px 10px;
+	margin: 10px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+	font-family: 'Poppins', sans-serif;
+	transition: background-color 0.3s; 
+}
+
+.button:hover {
+	background-color: lightblue;
+}
+
+.definition {
+	color: white;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+	font-family: 'Poppins', sans-serif;
+	font-size: 16px;
+	text-align: center;
+	margin-top: 2px;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel = "stylesheet" href = "homepage-style.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="https://fonts.cdnfonts.com/css/windsor-pro" rel="stylesheet">
+		<link href = "'https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+		<title>PREFECT SYSTEM</title>
+	</head>
+
+	<body>
+		
+		<div class = "school-name">Rogationist College</div>
+		<div class = "school-def">College and Technical Education Departments</div>
+			<img id = "logo" src= "rc-logo.png" alt="Logo description">
+			<div class = "title">Student Discipline System</div>
+				<div class = "definition">
+					<p>A Student Discipline System is a structured framework implemented within educational institutions 
+					<br>to maintain a positive and conducive learning environment by ensuring the adherence 
+					<br>to established rules, codes of conduct, and behavioral expectations. This system is designed to address and
+					<br>manage student behavior, fostering a safe and respectful atmosphere that promotes academic achievement 
+					<br>and personal development.</p>
+				</div>
+		
+		<div class = "button-container">
+			 <button class="button">INSERT VIOLATION</button>
+        <button class="button">RENDER COMMUNITY SERVICE</button>
+		</div>
+		
+		<div class = "background-image">
+			<img src = "background-rc.jpg">
+		</div>
+		
+		
+
+	</body>
+	
+	<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const insertViolationButton = document.querySelector(".button-container .button:nth-child(1)");
+    const renderCommunityServiceButton = document.querySelector(".button-container .button:nth-child(2)");
+    const backToHomeLinks = document.querySelectorAll(".back-to-home");
+
+    function navigateToInsertData() {
+      window.location.href = "insert-data.html";
+    }
+
+    function navigateToCommunityServiceRender() {
+      window.location.href = "cs -render.html";
+    }
+
+    // Add click event listeners to the buttons
+    insertViolationButton.addEventListener("click", navigateToInsertData);
+    renderCommunityServiceButton.addEventListener("click", navigateToCommunityServiceRender);
+
+    // Function to navigate back to the homepage
+    function navigateToHomePage(event) {
+      event.preventDefault();
+      window.location.href = "homepage.html";
+    }
+
+    // Add click event listeners to back-to-home links
+    backToHomeLinks.forEach(function (link) {
+      link.addEventListener("click", navigateToHomePage);
+    });
+  });
+</script>
+
+
+</html>
